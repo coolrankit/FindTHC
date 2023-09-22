@@ -1,0 +1,120 @@
+﻿#post-body #normal-sortables{
+	min-height:5px;
+}
+/************************************/
+.th-label{
+	display:inline-block;
+	width:150px;
+}
+.th-label-s{
+	display:inline-block;
+	width:75px;
+}
+#prices-seed, #prices-weight{display:none;}
+/************************************/
+
+  .custom-combobox {
+    position: relative;
+    display: inline-block;
+  }
+  .custom-combobox-toggle {
+    position: relative;
+    top: -2px;
+    bottom: 0;
+    margin-left: -1px;
+    padding: 9px 0;
+  }
+  .custom-combobox-input {
+    margin: 0;
+    padding: 5px 10px;
+  }
+/*******************************************/
+.thchandlediv {
+    float: right;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+	color: #A0A5AA;
+	outline:none !important;
+	border-radius: 50%;
+	border:1px solid rgba(0, 115, 170, 0.0) !important;
+}
+
+.thchandlediv::before{
+    content: "\00D7";
+    display: inline-block;
+    /*font: 400 20px/1 dashicons;*/
+    text-decoration: none !important;
+	width: 20px;
+	cursor: pointer;
+	color:#000;
+	text-align:center;
+	outline:none;
+	padding-top:4px;
+	height: 16px;
+}
+.thchandlediv.close::before{
+    content: "x";
+}
+.thchandlediv.expand::before{
+    content: "\25B4";
+}
+.closed .thchandlediv.expand::before{
+    content: "\25BE";
+}
+.thchandlediv:hover, .thchandlediv:focus{
+	border:1px solid rgba(0, 115, 170, 0.8) !important;
+	box-shadow: 0px 0px 3px rgba(0, 115, 170, 0.8);
+}
+.list-table{border-collapse: collapse;font-size:0.8em;}
+.list-table tr{display:none;}
+.list-table .listcat{display:table-row;cursor:pointer;}
+.list-table td{width:40px;padding:3px 5px;text-align:center;position:relative;overflow:none;}
+.list-table .listcat td{font-weight:bold;}
+.list-table td:first-child{width:250px;text-align:left;color:#35CBC9;cursor:pointer;}
+.list-table .listcat td:first-child{color:#444;}
+.list-table.seed{font-size:0.75em;}
+.list-item{font-weight:normal;padding:10px 15px;min-width:415px;color:#444;background:#eee;border:1px solid #ccc;z-index:5;position:absolute;display:none;border-radius:5px;box-shadow:0px 0px 3px 1px #ccc;}
+.list-table .clear:hover .list-item{display:block;}
+.item-title{margin-top:0;font-size:1em;font-weight:bold;}
+.item-title span{float:right;color:#FF6600;}
+.item-title span span{float:none;display:inline-block;margin-right:10px;margin-left:2px;font-weight:normal;color:#444;font-size:0.75em;vertical-align:text-top;position:relative;top:-3px;}
+.item-title span span:last-child{margin-right:0px;}
+.item-img{width:75px;margin:5px;}
+p .item-img:first-child{margin-left:0;}
+p .item-img:last-child{margin-right:0;}
+.claim{background:#fff;padding:10px;margin:15px;border-radius:5px;display:none;}
+.list-table .page-title-action{top:0;padding:0 8px;cursor:pointer;}
+/***************************************************************/
+.inside .list-item{display:block;position:unset;}
+.inside .list-item p{line-height:normal;margin:3px 0;font-size: 13px;}
+.inside .list-item .fleft{float:left;margin-right:20px;}
+.thcloading{position:fixed;top:calc(50% - 35px); left:calc(50% - 35px);padding:5px;border:1px solid #666;background:#fff;box-shadow: 0px 0px 3px rgba(0, 115, 170, 0.8);border-radius:5px;display:none;}
+.chosen-container-single .chosen-single{padding: 2px 0px 3px 8px;height: 30px;}
+.chosen-container-single .chosen-single div b{background-position:0px 4px;}
+.thc-upload, .thc-upload.button, .wp-core-ui .thc-upload.button{margin-right:30px;}
+/*.thc-upload-d, .thc-upload-d.button, .wp-core-ui .thc-upload-d.button{margin-right:30px;}*/
+.thc-uploaded{
+	display:inline-block;
+	width:50px;
+	height:50px;
+	background-color:rgba(0,0,0,0.2);
+	/*background-image:url('images/map.gif');*/
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:contain;
+	vertical-align:middle;
+	text-align:center;
+	cursor:pointer;
+	margin-right:10px;
+}
+.thc-uploaded span{
+	display:inline-block;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.1);
+	background-image:url('../images/cross.png');
+	background-repeat:no-repeat;
+	background-position:bottom right;
+}
+.thc-uploaded img{vertical-align:bottom;}
